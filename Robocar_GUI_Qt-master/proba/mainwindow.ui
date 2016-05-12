@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>888</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>888</width>
+    <height>576</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>888</width>
+    <height>576</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Robocar GUI Control</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLineEdit" name="c1o1Tex">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>55</y>
+      <width>430</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>/home/nor/robocar/robocar-emulator/justine/map.osm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c1o1Lbl">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>35</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>osm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startSimBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>475</y>
+      <width>141</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start simulation</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smcLbl">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>81</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Smartcity</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c1o2Lbl">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>90</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>city</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c1o2Tex">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>110</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Budapest</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c1o3Tex">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>55</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>BudapestSharedMemory</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c1o4Tex">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>110</y>
+      <width>430</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>/home/nor/robocar/robocar-emulator/justine/budapest-lmap.txt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c1o3Lbl">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>35</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>shm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c1o4Lbl">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>90</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>node2gps</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="traffLbl">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>145</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Traffic</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clientLbl">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>295</y>
+      <width>151</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Samplemyshmclient</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clientLbl_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>390</y>
+      <width>151</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Java GUI map</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c3o4Lbl">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>320</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>team</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c3o3Lbl">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>320</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>shm</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c3o4Tex">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>340</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>BerlinPolice</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c3o2Lbl">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>320</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>minutes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c3o1Lbl">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>320</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>port</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c3o3Tex">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>340</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>BudapestSharedMemory</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c3o2Tex">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>340</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c3o1Tex">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>340</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>10007</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c2o1Tex">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>190</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>10007</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c2o1Lbl">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>170</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>port</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c2o2Lbl">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>170</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>shm</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c2o2Tex">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>190</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>BudapestSharedMemory</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c4o1Tex">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>435</y>
+      <width>430</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>/home/nor/robocar/robocar-emulator/justine/budapest-lmap.txt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c4o1Lbl">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>415</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>node2gps</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c2o3Tex">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>190</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c2o3Lbl">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>170</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>random cars</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="c2o4Tex">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>245</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c2o4Lbl">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>225</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>catch distance</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="c2o4Lbl_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>225</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>traffic type</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="traffictCmbox">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>245</y>
+      <width>175</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>NORMAL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ANTS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ANTS_RND</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ANTS_RERND</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ANTS_MRERND</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>888</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
